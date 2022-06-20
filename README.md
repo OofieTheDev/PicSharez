@@ -38,6 +38,6 @@ This project took me about 4 days to complete.
 During this period, I managed to practice the skills I mentioned in the introduction. I  also learnt about CORS (cross-origin resource sharing), which was necessary as my React frontend and the Express backend were running on different ports. Implementing the like/dislike system also gave me an opportunity to use the React Hook useReducer in one of my projects for the first time, as previously I only relied on useState. Another React hook that I had plenty of opportunities to practice due to this project was useEffect, as I had to use it for numerous calls to my backend to fetch the necessary info.
 
 ## Conclusion
-This project was a pretty good way for me to solidify my React knowledge. It covered `event handling`, `controlled inputs/form`s, many React Hooks such as `useEffect`, `useState`, `useReducer` et Cetera, as well as `conditional rendering` and `props`. It also opened my eyes as to how React could be used in conjunction with a backend to build a full-stack Web application.
+This project was a pretty good way for me to solidify my React knowledge. It covered `event handling`, `controlled inputs/forms`, many React Hooks such as `useEffect`, `useState`, `useReducer` et Cetera, as well as `conditional rendering` and `props`. It also opened my eyes as to how React could be used in conjunction with a backend to build a full-stack Web application.
 
 Lastly, I would like to thank [@Zid-er](https://github.com/Zid-er) for inspiring me to build this in the first place, lol.
