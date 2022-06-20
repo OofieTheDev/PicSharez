@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# PicSharez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## To Run the App
+In the main folder, run
+> npm start
+This will startup the React frontend at [http://localhost:3000](http://localhost:3000).
 
-## Available Scripts
+Next, cd into the react-backend-1 folder and run
+> nodemon app.js
+This will startup an Express server on Port `3001`.
 
-In the project directory, you can run:
+From thereon, the application should work as expected.
 
-### `npm start`
+## Introduction
+I embarked on this project to practice the following:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Connecting React to a backend
+- Authentication
+- React Router V6
+- My React skills in general
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+This was also my **first** time connecting React to a backend, so don't judge. It's also my first time writing a README.md, I *hope* it turns out good, or at least decent.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
+The Frontend of this project is 100% made with React.js, along with standard CSS. No CSS libraries are used, and the React frontend runs on Port `3000`. React Router V6 is also used to handle routing, as well as provide the little red underlines in the NavBar depending on which route the user is at.
 
-### `npm run build`
+The Backend of this project uses Node.js along with Express.js, whereas authentication is handled by a Passport.js Local Strategy, allowing users to sign up/login in the standard way (i.e. using a Username/Email & Password). OAuth is not implemented at the moment. For storing the information of the users, MongoDB is used (locally), and the email/username is stored in plaintext while the password is hashed using bcrypt, with a cost factor of `12`. The Express server runs by default on Port `3001`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The authentication is session-based and the information of the session cookies, along with the relevant details (e.g. expiry date), is also stored in MongoDB.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Things I Learnt
+This project took me about 4 days to complete. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+During this period, I managed to practice the skills I mentioned in the introduction. I  also learnt about CORS (cross-origin resource sharing), which was necessary as my React frontend and the Express backend were running on different ports. Implementing the like/dislike system also gave me an opportunity to use the React Hook useReducer in one of my projects for the first time, as previously I only relied on useState. Another React hook that I had plenty of opportunities to practice due to this project was useEffect, as I had to use it for numerous calls to my backend to fetch the necessary info.
 
-### `npm run eject`
+## Conclusion
+This project was a pretty good way for me to solidify my React knowledge. It covered `event handling`, `controlled inputs/form`s, many React Hooks such as `useEffec`t, `useState`, `useReducer` et Cetera, as well as `conditional rendering` and `props`. It also opened my eyes as to how React could be used in conjunction with a backend to build a full-stack Web application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lastly, I would like to thank @Zid-er for inspiring me to build this in the first place, lol.
