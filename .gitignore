@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 src/Data.js
-src/components/SubsequentRenders.jsx
+/src/components/SubsequentRenders.jsx
 
 # testing
 /coverage
