@@ -25,7 +25,7 @@ I embarked on this project to practice the following:
 
 This was also my **first** time connecting React to a backend, so don't judge. It's also my **first** time writing a README.md, I *hope* it turns out good, or at least decent.
 
-## :keyboard: Overview
+## :computer: Overview
 The Frontend of this project is 100% made with React.js, along with standard CSS. No CSS libraries are used, and the React frontend runs on Port `3000`. React Router V6 is also used to handle routing, as well as provide the little red underlines in the NavBar depending on which route the user is at.
 
 The Backend of this project uses Node.js along with Express.js, whereas authentication is handled by a Passport.js Local Strategy, allowing users to sign up/login in the standard way (i.e. using a Username/Email & Password). OAuth is not implemented at the moment. For storing the information of the users, MongoDB is used (locally), and the email/username is stored in plaintext while the password is hashed using bcrypt, with a cost factor of `12`. The Express server runs by default on Port `3001`.
