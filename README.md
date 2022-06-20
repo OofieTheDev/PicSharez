@@ -1,5 +1,5 @@
 # PicSharez
-![PicSharez Logo](/src/images/tsuki-red.png)
+<!--![PicSharez Logo](/src/images/tsuki-red.png)-->
 
 ## :thinking: How To Run the App
 In the main folder, run
