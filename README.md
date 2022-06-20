@@ -40,4 +40,4 @@ During this period, I managed to practice the skills I mentioned in the introduc
 ## Conclusion
 This project was a pretty good way for me to solidify my React knowledge. It covered `event handling`, `controlled inputs/form`s, many React Hooks such as `useEffect`, `useState`, `useReducer` et Cetera, as well as `conditional rendering` and `props`. It also opened my eyes as to how React could be used in conjunction with a backend to build a full-stack Web application.
 
-Lastly, I would like to thank @Zid-er for inspiring me to build this in the first place, lol.
+Lastly, I would like to thank [@Zid-er](https://github.com/Zid-er) for inspiring me to build this in the first place, lol.
