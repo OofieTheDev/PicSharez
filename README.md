@@ -1,4 +1,5 @@
 # PicSharez
+![PicSharez Logo](/src/images/tsuki-red.png)
 
 ## To Run the App
 In the main folder, run
@@ -22,7 +23,7 @@ I embarked on this project to practice the following:
 - My React skills in general
 
 
-This was also my **first** time connecting React to a backend, so don't judge. It's also my first time writing a README.md, I *hope* it turns out good, or at least decent.
+This was also my **first** time connecting React to a backend, so don't judge. It's also my **first** time writing a README.md, I *hope* it turns out good, or at least decent.
 
 ## Overview
 The Frontend of this project is 100% made with React.js, along with standard CSS. No CSS libraries are used, and the React frontend runs on Port `3000`. React Router V6 is also used to handle routing, as well as provide the little red underlines in the NavBar depending on which route the user is at.
